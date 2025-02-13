@@ -38,9 +38,9 @@ services:
   didactic-unit:
     url: ${DIDACTIC_UNIT_SERVICE_URL:https://thorough-myrah-vallegrande2-5aeaf151.koyeb.app/common/api/v1/didactic-unit}
   capacity:
-    url: ${CAPACITY_SERVICE_URL:https://fit-tabbitha-vallegrande5-a15870e0.koyeb.app/common/api/v1/capacity}
+    url: ${CAPACITY_SERVICE_URL:https://fit-tabbitha-vallegrande5-a15870e0.koyeb.app/management/api/v1/capacity}
   student:
-    url: ${STUDENT_SERVICE_URL: https://vg-ms-student-production.up.railway.app/management/api/v1/student}
+    url: ${STUDENT_SERVICE_URL:https://vg-ms-student-production.up.railway.app/management/api/v1/student}
   studyProgram:
     url: ${STUDY_PROGRAM_SERVICE_URL:https://active-sabra-vallegrande-e443c570.koyeb.app/common/api/v1/study-program}
   assigmentStaf:
