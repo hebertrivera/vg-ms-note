@@ -1,0 +1,50 @@
+# Puerto de expocision
+server:
+    port: ${SERVER_PORT:8092}
+
+# Configuraicon Spring Boot
+spring:
+    application:
+        name: vg.ms.note
+
+    data:
+        mongodb:
+            uri: mongodb+srv://amirarbieto:n1230IGFtm6682Kj@artemiosolutions.pripjnm.mongodb.net/artemiosolutions?retryWrites=true&w=majority
+
+# Microservice health meter
+management:
+  endpoint:
+    health:
+      show-details: always
+
+# Empoit de actuator  
+
+api:
+   version: api/v1
+
+# Swagger
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /api/Nota
+
+# servicos externos
+services:
+  classroom:
+    url: ${CLASSROOM_SERVICE_URL:https://vg-ms-classroom-production-37bc.up.railway.app/management/api/v1/classroom}
+  competence:
+    url: ${COMPETENCY_SERVICE_URL:https://vg-ms-competency-production-b9c6.up.railway.app/common/api/v1/competencies}
+  didactic-unit:
+    url: ${DIDACTIC_UNIT_SERVICE_URL:https://vg-ms-didactic-unit-production.up.railway.app/common/api/v1/didactic-unit}
+  capacity:
+    url: ${CAPACITY_SERVICE_URL:https://vg-ms-capacity-production.up.railway.app/common/api/v1/capacity}
+  student:
+    url: ${STUDENT_SERVICE_URL:https://ms-vg-student-production.up.railway.app/management/api/v1/student}
+  studyProgram:
+    url: ${STUDY_PROGRAM_SERVICE_URL:https://vg-ms-study-programme-production.up.railway.app/common/api/v1/study-program}
+  assigmentStaf:
+    url: ${ASSIGMENT_STAFF_SERVICE_URL:https://vg-ms-assigmentstaff-production-710f.up.railway.app/management/api/v1/assignment-staff}
+  email:
+    url: http://localhost:7007/management/email/v1
+
