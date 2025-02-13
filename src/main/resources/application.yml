@@ -9,7 +9,7 @@ spring:
 
     data:
         mongodb:
-            uri: mongodb+srv://amirarbieto:n1230IGFtm6682Kj@artemiosolutions.pripjnm.mongodb.net/artemiosolutions?retryWrites=true&w=majority
+            uri: mongodb+srv://gabrielgutierrezq:3mbmCx8Gx6hrRKHY@as221s5prs2.1e7z9.mongodb.net/AS221S5PRS2?retryWrites=true&w=majority&appName=AS221S5PRS2
 
 # Microservice health meter
 management:
@@ -32,19 +32,19 @@ springdoc:
 # servicos externos
 services:
   classroom:
-    url: ${CLASSROOM_SERVICE_URL:https://vg-ms-classroom-production-37bc.up.railway.app/management/api/v1/classroom}
+    url: ${CLASSROOM_SERVICE_URL:https://xenogeneic-lavinia-harp-44b9818d.koyeb.app/management/api/v1/classroom}
   competence:
-    url: ${COMPETENCY_SERVICE_URL:https://vg-ms-competency-production-b9c6.up.railway.app/common/api/v1/competencies}
+    url: ${COMPETENCY_SERVICE_URL:https://busy-sallyann-vallegrandeprs2-7c9b091a.koyeb.app/common/api/v1/competencies}
   didactic-unit:
-    url: ${DIDACTIC_UNIT_SERVICE_URL:https://vg-ms-didactic-unit-production.up.railway.app/common/api/v1/didactic-unit}
+    url: ${DIDACTIC_UNIT_SERVICE_URL:https://thorough-myrah-vallegrande2-5aeaf151.koyeb.app/common/api/v1/didactic-unit}
   capacity:
-    url: ${CAPACITY_SERVICE_URL:https://vg-ms-capacity-production.up.railway.app/common/api/v1/capacity}
+    url: ${CAPACITY_SERVICE_URL:https://fit-tabbitha-vallegrande5-a15870e0.koyeb.app/common/api/v1/capacity}
   student:
-    url: ${STUDENT_SERVICE_URL:https://ms-vg-student-production.up.railway.app/management/api/v1/student}
+    url: ${STUDENT_SERVICE_URL: https://vg-ms-student-production.up.railway.app/management/api/v1/student}
   studyProgram:
-    url: ${STUDY_PROGRAM_SERVICE_URL:https://vg-ms-study-programme-production.up.railway.app/common/api/v1/study-program}
+    url: ${STUDY_PROGRAM_SERVICE_URL:https://active-sabra-vallegrande-e443c570.koyeb.app/common/api/v1/study-program}
   assigmentStaf:
-    url: ${ASSIGMENT_STAFF_SERVICE_URL:https://vg-ms-assigmentstaff-production-710f.up.railway.app/management/api/v1/assignment-staff}
+    url: ${ASSIGMENT_STAFF_SERVICE_URL:https://institucional-staff-production.up.railway.app/management/api/v1/assignment-staff}
   email:
     url: http://localhost:7007/management/email/v1
 
